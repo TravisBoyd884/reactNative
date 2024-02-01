@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Section 10</title>
+  </head>
+  <body>
+    <h1>Section 10 --> page 39-40</h1>
+    <pre>
+        <code>
+          import React, {Component} from 'react';
+          import {Text, View} from 'react-native';
+
+          export default function Example() {
+            render() {
+              return (
+                <View>
+                  <Text>I'm a basic Component</Text>
+                </View>
+              )
+            }
+          }
+
+          
+        </code>
+          
+        <code>
+          import React, {Component} from 'react';
+          import {Text, View} from 'react-native';
+
+          export default function Example() {
+            constructor (props) {
+              super(props)
+              this.state={
+                name:"Sriraman"
+              }
+            }
+            render() {
+              return (
+                <View>
+                  <Text>Hi, {this.state.name}</Text>
+                </View>
+              )
+            }
+          }
+
+          
+        </code>
+
+        <code>
+          import React, {Component} from 'react';
+          import {Text, View} from 'react-native';
+
+          const Title = ({Message}) => {
+            <Text>{Message}</Text>
+          }
+
+          const App = ()=> {
+            <View>
+              <Title title='Example Stateless Component'/>
+            </View>
+          }
+
+        </code>
+    </pre>
+  </body>
+</html>
